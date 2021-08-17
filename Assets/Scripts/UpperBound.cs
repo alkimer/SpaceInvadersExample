@@ -11,21 +11,8 @@ public class UpperBound : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("SIIIIIIIIIIIIIIIIIIIIIIIII:" + col.gameObject.name);
 
-    //    if (!(col.gameObject.name.Equals("Ship")))
-      //  {
             Destroy(col.gameObject);
-         //   Destroy(gameObject);
-       // }
-        
-        Debug.Log("colision con :" + col.gameObject);
 
-        //   if (!(col.gameObject.name.Equals("Ship")))
-        //  {
-        //   Destroy(col.gameObject);
-        // Destroy(gameObject);
-        // }
-      //  Destroy(gameObject);
     }
 }

@@ -2,38 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public  class EnemyController: MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
-    private LifeBar _lifeBar = new LifeBar();
+    public int initialHealth;
+    private LifeBar _lifeBar;
+
+ 
     // Start is called before the first frame update
     void Start()
+    
     {
-        
+        _lifeBar = new LifeBar(initialHealth);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
-    
+
     void OnCollisionEnter2D(Collision2D col)
     {
         Debug.Log("ENEMY:" + col.gameObject.name);
+        Debug.Log("HEALTH:" + _lifeBar.Health);
 
-        //    if (!(col.gameObject.name.Equals("Ship")))
-        //  {
+        // Destruyo ls BAlA
         Destroy(col.gameObject);
-        //   Destroy(gameObject);
-        // }
-        
-        Debug.Log("colision con :" + col.gameObject);
 
-        //   if (!(col.gameObject.name.Equals("Ship")))
-        //  {
-        //   Destroy(col.gameObject);
-        // Destroy(gameObject);
-        // }
-        //  Destroy(gameObject);
+        _lifeBar.DecreaseHealth(30);
+        //si se terminó la energía me destruyo
+        if (_lifeBar.Health == 0) { Destroy(gameObject); }
+
     }
 }

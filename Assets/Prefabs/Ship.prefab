@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7562152505782009153}
   - component: {fileID: 7562152505782009152}
   - component: {fileID: 7562152505782009155}
-  - component: {fileID: 4714794886845222193}
-  - component: {fileID: 7660349285428546058}
   - component: {fileID: -5419793760274161482}
+  - component: {fileID: 9015865901564831574}
+  - component: {fileID: 5598438604553243988}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -110,45 +110,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: -0.061111093}
-      - {x: -0.4330127, y: -0.8111111}
-      - {x: 0.43301272, y: -0.81111103}
---- !u!50 &4714794886845222193
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7562152505782009154}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!114 &7660349285428546058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7562152505782009154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce5c26ad87d2d4b43b31b0b276834b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingSound: {fileID: -5419793760274161482}
-  bullet: {fileID: 359580943694477380, guid: 1786ab73ebf962c47bcb81805937888b, type: 3}
-  speed: 2
+    - - {x: 0, y: 0.5}
+      - {x: -0.4330127, y: -0.25000003}
+      - {x: 0.43301272, y: -0.24999996}
 --- !u!82 &-5419793760274161482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -245,3 +209,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &9015865901564831574
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562152505782009154}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &5598438604553243988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562152505782009154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5c26ad87d2d4b43b31b0b276834b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingSound: {fileID: 0}
+  bullet: {fileID: 359580943694477380, guid: 1786ab73ebf962c47bcb81805937888b, type: 3}
+  speed: 5

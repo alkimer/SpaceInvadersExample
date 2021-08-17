@@ -6,6 +6,13 @@ public class LifeBar
     private bool HasShield { get; set; } = false;
     private bool Poisoned { get; set; } = false;
 
+    public LifeBar(int health)
+    {
+        Health = health;
+    }
+    
+    public LifeBar() {}
+    
     public void IncrementHealth(int ammount)
     {
         if (Health <= 100)
