@@ -29,10 +29,6 @@ public class ShipController : MonoBehaviour
         Vector2 direction = new Vector2(x, y).normalized;
 
         Move(direction);
-  //      float moveHorizontal = Input.GetAxis("Horizontal");
-    //    movement = new Vector2(moveHorizontal * speed * Time.deltaTime, 0f);
-        //transform.position.
-      //  transform.position= vement;
 
         if (Input.GetKeyDown(KeyCode.Space))
        {
@@ -73,7 +69,7 @@ public class ShipController : MonoBehaviour
 		}
 
 		// Finally, update our position!!
-		transform.position = pos;
+		
     
     
     

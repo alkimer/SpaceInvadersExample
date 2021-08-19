@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4911348532685254441}
   - component: {fileID: 4911348532685254440}
   - component: {fileID: 4241898018275619110}
+  - component: {fileID: -2648486049875527097}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -112,3 +113,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialHealth: 90
+--- !u!50 &-2648486049875527097
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4911348532685254443}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
